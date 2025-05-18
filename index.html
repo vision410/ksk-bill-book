@@ -186,24 +186,39 @@ button:hover {
         
 
   @media print {
-    * {
-      background: none !important;
-      color: #000 !important;
-      -webkit-print-color-adjust: exact;
-      print-color-adjust: exact;
-    }
-    button, input, select, .no-print {
-      display: none !important;
-    }
-    body {
-      margin: 0;
-      font-size: 12px;
-    }
-    table, th, td {
-      border: 1px solid #000 !important;
-      border-collapse: collapse !important;
-    }
+  * {
+    background: white !important;
+    color: black !important;
+    -webkit-print-color-adjust: economy !important;
+    print-color-adjust: economy !important;
   }
+
+  button,
+  input,
+  select,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    margin: 0 !important;
+    font-size: 12px !important;
+    background: white !important;
+    color: black !important;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black !important;
+    background: white !important;
+    color: black !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: black !important;
+  }
+}
 </style>
 </head>
 <body>
